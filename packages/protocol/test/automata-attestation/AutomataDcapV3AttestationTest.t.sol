@@ -117,7 +117,7 @@ contract AutomataDcapV3AttestationTest is Test, AttestationBase {
         assertTrue(parsedInstanceAddr == address(0xC2D4564358139C90C17B744FE837F4DDc503EEdF));
     }
 
-    function testParsedQuoteBinAttestation() public {
+    function testSimpleParsedQuoteBinAttestation() public {
         vm.prank(user);
         bytes memory v3QuoteBytes = sampleQuote;
         V3Struct.ParsedV3QuoteStruct memory v3quote =
